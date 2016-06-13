@@ -23,20 +23,20 @@ angular.
     }
 }
 ]).
-directive('informOrder', [function () {
-    var ariaStatusSort = document.querySelector('.aria-status-sort');
-    return {
-      restrict: 'A',
-      link: function ($scope) {
-        $scope.$watch('$ctrl.orderProp', function (order) {
-          if(order === 'age') {
-            ariaStatusSort.innerHTML = 'Items filter by newest'
-          } else {
-            ariaStatusSort.innerHTML = 'Items filter by alphabetical order'
-          }
-          
-        });
+  directive('informOrder', [function () {
+      var ariaStatusSort = document.querySelector('.aria-status-sort');
+      return {
+        restrict: 'A',
+        link: function ($scope) {
+          $scope.$watch('$ctrl.orderProp', function (order) {
+            if(order === 'age') {
+              ariaStatusSort.innerHTML = 'Items filter by newest'
+            } else {
+              ariaStatusSort.innerHTML = 'Items filter by alphabetical order'
+            }
+            
+          });
+        }
       }
-    }
-}
+  }
 ]);
