@@ -168,7 +168,6 @@ git diff step-?..step-?
   
 ### step-15 _Accessibility (a11y)_
 
-- Add ngAria module.
 - Add labels to the search and order fields.
 - Add accessibility plugin for Protractor.
   - Add missing alt attributes in the phone detail.
